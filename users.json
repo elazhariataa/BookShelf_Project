@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "649c064ad7f17471ec0099d0"
+  },
+  "userId": "89af8640-159b-11ee-a76d-3b646f1079b1",
+  "userName": "ataa",
+  "password": "$2b$10$JoUnzB2rRqAUJb37rkIchekmIUQ0.cYvIGb5rXJ29r2D4uGqry86i",
+  "email": "ataa02@gmail.com",
+  "booksCollecion": [
+    "c7586fc0-159b-11ee-a76d-3b646f1079b1"
+  ],
+  "savedPosts": [
+    "e570cb60-15e6-11ee-a293-61dbf97e7907"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649c6228d7f17471ec024cfb"
+  },
+  "userId": "4b7cf560-15d2-11ee-a76d-3b646f1079b1",
+  "userName": "ahmadi",
+  "password": "$2b$10$xBGOkgRycuv5AG5xEKpHa.RDQFP7E0R7WmX9onC1x83bU7IykFSBO",
+  "email": "ahmadi@gmail.com",
+  "booksCollecion": [],
+  "savedPosts": [],
+  "__v": 0
+}]

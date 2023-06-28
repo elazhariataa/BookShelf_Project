@@ -1,0 +1,68 @@
+:root {
+    --main-color: #1c2331;
+    --accent-color: #3c4858;
+    --text-color: #fff;
+}
+.addBook_form{
+
+}
+.addBook_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.2);
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+.addBook_form form .addbook1{
+    display: flex;
+    flex-direction: row;
+}
+.addBook_form form .addbook2{
+    display: flex;
+    flex-direction: column;
+}
+.addBook_form form input{
+    margin: 10px;
+    padding: 13px;
+    width: 400px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+.addBook_form form textarea{
+    margin: 10px;
+    padding: 13px;
+    width: 800px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+.addBook_form form label{
+    margin: 10px;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.addBook_form button{
+    width: 400px;
+    margin: 10px;
+    background-color: white;
+    color: #1c2331;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.addBook_form button:hover{
+    background-color: #ed9d36;
+    color: white;
+}

@@ -1,0 +1,240 @@
+:root {
+    --main-color: #1c2331;
+    --accent-color: #3c4858;
+    --text-color: #fff;
+    --buttons: #ed9d36;;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.posts .addPost{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    background-color: #1c2331;
+    width: 42%;
+    border-radius: 10px;
+    border: 1px dashed white;
+}
+.addPost .loggeduserInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.addPost .loggeduserInfo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 7px;
+    margin-right: 20px;
+    border: 2px solid var(--buttons);
+
+}
+.addPost form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.addPost form textarea{
+    margin: 10px;
+    padding: 13px;
+    width: 90%;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+}
+.addPost form button{
+    width: 100px;
+    height: 95px;
+    color: white;
+    background-color: var(--buttons);
+    transition: background-color 0.5s ease;
+}
+.addPost form button:hover{
+    color: var(--main-color);
+    background-color: white;
+}
+
+/* ----------------- display posts --------------- */
+.postsCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+.postsCards .postCard{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+}
+.postCardHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.postsCards .postCard .userInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.postsCards .postCard .userInfo img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-right: 15px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+.sharedAt p{
+    margin-right: 5px;
+}
+.postsCards .postCard .postContent div{
+    padding: 15px;
+    margin: 15px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+.addComment form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.addComment form input{
+    padding: 10px;
+    margin:  15px;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+}
+.addComment form button{
+    background-color: var(--buttons);
+    transition: background-color 0.5s ease;
+}
+.addComment form button:hover{
+    background-color: var(--accent-color);
+
+}
+/* ---------------- post footer ------------------ */
+.postActions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.postLikes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 5px;
+    border-right: 1px solid white;
+    cursor: pointer;
+}
+.postLikes img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.postComments{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 5px;
+    cursor: pointer;
+}
+.postComments img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.postSave{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 5px;
+    border-left: 1px solid white;
+    cursor: pointer;
+}
+.postSave img{
+    width: 20px;
+    height: 20px;
+}
+
+/* ----------------- see Comment ------------------- */
+.seeComment{
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.seeCommentCard{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 7px;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+.seeCommentHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.seeCommentCard .seeCommentHeader div .userComPic{
+    width: 30px;
+    height: 30px;
+}
+.seeCommentBody p{
+    background-color: white;
+    color: var(--main-color);
+    padding: 7px;
+    margin-left: 15px;
+    border-radius: 3px;
+}
+/* ---------------------- see Likes -------------------- */
+.likers{
+    margin: 5px;
+    margin-left: 12px;
+}
+.likers:hover{
+    color: var(--buttons);
+    cursor: pointer;
+}
+.seeLikes{
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.seeLikeCard{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+}
+.seeLikeHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "649c06b2d7f17471ec00b6a1"
+  },
+  "id": "c7586fc0-159b-11ee-a76d-3b646f1079b1",
+  "title": "book1",
+  "author": "author1",
+  "ISBN": "14785236",
+  "publisher": "publisher1",
+  "genre": "genre1",
+  "description": "description description description description description",
+  "rating": 2,
+  "book_owner": "89af8640-159b-11ee-a76d-3b646f1079b1",
+  "image": "http://localhost:5000/public/ac8bbd38-0de6-4d8e-b50c-5f6117eb9750-testcover.jpg",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687946930385"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687946930385"
+    }
+  },
+  "__v": 0
+}]

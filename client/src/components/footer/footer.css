@@ -1,0 +1,16 @@
+:root {
+    --main-color: #1c2331;
+    --accent-color: #3c4858;
+    --text-color: #fff;
+    --buttons: #ed9d36;;
+}
+
+footer{
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+footer span{
+    color: var(--buttons);
+}

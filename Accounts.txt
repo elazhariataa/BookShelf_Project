@@ -1,0 +1,7 @@
+account1:
+	email: ataa02@gmail.com
+	password: password
+
+account2
+	email: ahmadi@gmail.com
+	password: 123456

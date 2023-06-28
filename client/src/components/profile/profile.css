@@ -1,0 +1,274 @@
+:root {
+    --main-color: #1c2331;
+    --accent-color: #3c4858;
+    --text-color: #fff;
+    --buttons: #ed9d36;
+}
+.ProfilePage{
+    display: flex;
+    flex-direction: row;
+}
+.coverPhoto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+.coverPhoto img{
+    width: 90%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.ProfilePage .profileSidebar{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-right: 20px;
+    width: 25%;
+    height: 300px;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+.profileSidebar .userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileSidebar .userInfo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--buttons);
+}
+.profileSidebar .userInfo h3{
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.profileSidebar .navigate{
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.profileSidebar .navigate:hover{
+    background-color: #3c4858;
+    color: white;
+}
+.profileMain{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+/* ----------------- article 1 ------------------------- */
+.profileMain .article1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileMain .article1_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 10px;
+    margin: 20px;
+    width: 90%;
+    border-radius: 7px;
+}
+.profileMain .article1 .article1_1 img{
+    max-width: 200px;
+    max-height: 150px;
+    border: 2px solid var(--buttons);
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profileMain .article1 .article1_1 h1{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.profileMain .article1 .article1_1 p{
+    color: white;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 7px;
+}
+/* -------------------- article 2 ------------------- */
+.profileMain .article2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+.profileMain .article2 h1{
+    color: white;
+    font-weight: bold;
+    align-self: center;
+    margin: 15px;
+}
+.profileMain .article2 .article2_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.profileMain .article2 .article2_1 label{
+    width: 200px;
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.profileMain .article2 .article2_1 input{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    background-color: white;
+}
+.profileMain .article2 .article2_1 textarea{
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 150px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: var(--main-color);
+    background-color: white;
+}
+.profileMain .article2 .article2_2{
+    align-self: center;
+    margin: 10px;
+}
+.profileMain .article2 .article2_2 .save{
+    width: 200px;
+    cursor: pointer;
+    background-color: var(--buttons);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.profileMain .article2 .article2_2 .save:hover{
+    background-color: var(--accent-color);
+}
+.profileMain .article2 .article2_2 .cancel{
+    width: 200px;
+    cursor: pointer;
+    background-color: white;
+    color: var(--main-color);
+    transition: background-color 0.3s ease;
+}
+.profileMain .article2 .article2_2 .cancel:hover{
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* --------------------- article 3 ------------------------ */
+.article3_h1{
+    text-align: center;
+    color: white;
+    margin: 40px auto 20px;
+    padding: 15px;
+}
+.article3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: var(--main-color);
+    width: 80%;
+    border-radius: 10px;
+    height: 700px;
+    overflow-y: auto;
+
+}
+.article3 .bookCard{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 80%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.2);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.bookCard:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.bookCard .userinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bookCard .userinfo img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ed9d36;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 3px;
+    margin-right: 25px;
+}
+.bookCard .userinfo p{
+    font-size: 20px;
+}
+.bookCard .bookinfo{
+    display: flex;
+    flex-direction: column;
+}
+.bookCard .bookinfo img{
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+.bookCard .bookinfo .compl1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bookCard .bookinfo .compl1 span{
+    margin-right: 10px;
+}
+.bookCard .bookinfo .author{
+    font-size: 15px;
+    margin: 10px;
+}
+.bookCard .details{
+    align-self: center;
+}
+.bookCard .details button{
+    background-color: white;
+    color: #1c2331;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.bookCard .details button:hover{
+    background-color: #ed9d36;
+    color: white;
+}
